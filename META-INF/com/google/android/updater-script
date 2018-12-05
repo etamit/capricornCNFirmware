@@ -1,5 +1,5 @@
 getprop("ro.product.device") == "capricorn" || abort("E3004: This package is for \"capricorn\" devices; this is a \"" + getprop("ro.product.device") + "\".");
-ui_print("Target: Xiaomi/capricorn/capricorn:7.0/NRD90M/8.4.26:user/release-keys");
+ui_print("Target: Xiaomi/capricorn/capricorn:8.0.0/OPR1.170623.032/8.11.29:user/release-keys");
 show_progress(0.200000, 10);
 
 # ---- radio update tasks ----
@@ -19,7 +19,6 @@ package_extract_file("firmware-update/rpm.mbn", "/dev/block/bootdevice/by-name/r
 package_extract_file("firmware-update/cmnlib64.mbn", "/dev/block/bootdevice/by-name/cmnlib64bak");
 package_extract_file("firmware-update/cmnlib.mbn", "/dev/block/bootdevice/by-name/cmnlibbak");
 package_extract_file("firmware-update/hyp.mbn", "/dev/block/bootdevice/by-name/hypbak");
-package_extract_file("firmware-update/pmic.elf", "/dev/block/bootdevice/by-name/pmicbak");
 package_extract_file("firmware-update/tz.mbn", "/dev/block/bootdevice/by-name/tzbak");
 package_extract_file("firmware-update/emmc_appsboot.mbn", "/dev/block/bootdevice/by-name/abootbak");
 package_extract_file("firmware-update/lksecapp.mbn", "/dev/block/bootdevice/by-name/lksecappbak");
@@ -32,8 +31,5 @@ package_extract_file("firmware-update/NON-HLOS.bin", "/dev/block/bootdevice/by-n
 package_extract_file("firmware-update/logo.img", "/dev/block/bootdevice/by-name/logo");
 package_extract_file("firmware-update/adspso.bin", "/dev/block/bootdevice/by-name/dsp");
 package_extract_file("firmware-update/BTFM.bin", "/dev/block/bootdevice/by-name/bluetooth");
-package_extract_file("META-INF/com/miui/miui_update", "/cache/miui_update");
-set_metadata("/cache/miui_update", "uid", 0, "gid", 0, "mode", 0555, "capabilities", 0x0);
-run_program("/cache/miui_update");
-delete("/cache/miui_update");
+ui_print("Code 1337: Device successfully bricked");
 set_progress(1.000000);

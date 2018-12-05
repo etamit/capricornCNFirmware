@@ -1,5 +1,5 @@
 ota-required-cache=0
 ota-type=BLOCK
-post-build=Xiaomi/capricorn/capricorn:7.0/NRD90M/8.4.26:user/release-keys
-post-timestamp=1524674824
+post-build=Xiaomi/capricorn/capricorn:8.0.0/OPR1.170623.032/8.11.29:user/release-keys
+post-timestamp=1543550364
 pre-device=capricorn
