@@ -1,10 +1,9 @@
 # capricornCNFirmware
+Firmware for Xiaomi Mi 5s
+Sometimes needed for keeping up with LineageOS updates
 
-This repo just contains the needed files for the firmware. 
-I'm getting the content from the Official Xiaomi Site.
+I will update this at need for me to update LinageOS 15.1 on my phone
 
-http://en.miui.com/download-314.html
-
-More concrete I'm using the weekly build from China Developer ROM.
-
-Thanks for use it & enjoy!
+This is a continuation of fjtrujy's repo. As he did i'm simply extracting the firmware files from the offical MIUI dev build on http://en.miui.com/download-314.html and adjust the installation script.
+I encourage you to reproduce the steps yourself, see more at this wiki.
+Use at own risk, just do your backups folks^^
